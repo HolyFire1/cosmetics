@@ -78,14 +78,17 @@ img {
 
 .dropdown-menu {
     position: absolute;
-    display: none;
+    /* display: none; */
+    display: flex;
     flex-direction: column;
     padding: 44px 0 45px;
     width: 287px;
     
     background-color: #0D0D0B;
 
-    transition: 0.2s all;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
 }
 
 .dropdown-menu button {
@@ -131,7 +134,9 @@ img {
 }
 
 .menu:hover .dropdown-menu {
-    display: flex;
+    /* display: flex; */
+    visibility: visible;
+    opacity: 1;
 }
 
 .menu:hover .menu-dropbtn {
