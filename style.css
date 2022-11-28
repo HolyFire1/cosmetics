@@ -457,6 +457,10 @@ img {
     display: flex;
 }
 
+.our-instagram-community_images image {
+    display: block;
+}
+
 .HAIR-SKIN-Y-SOUL {
     transform: translateY(29px);
     margin: 0 0 0 706px;
