@@ -545,6 +545,17 @@ input[type=search]:focus {
     border-bottom: 3px solid rgba(255, 255, 255, 0.56);
 } */
 
+.tab-btn {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+
+    transition: 0.2s;
+}
+
 .active-tab-btn {
     position: relative;
     z-index: 1;
@@ -555,6 +566,8 @@ input[type=search]:focus {
 }
 
 .info__tab-p {
+    display: none;
+    
     margin: 0 92px;
     border-top: 1px solid #231F1E;
     padding: 22px 0 92px;

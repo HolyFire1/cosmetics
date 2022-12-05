@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
     <title>NATUREAL</title>
 </head>
 
@@ -160,34 +161,50 @@
             </div>
             <div class="info__tab-wrapper">
                 <div>
-                    <button class="info__tab-button">Аромат</button>
-                    <div class="tab-btn"></div>
+                    <button class="info__tab-button" onclick="openTab(event, 'Aroma', 'AromaUL')">Аромат</button>
+                    <div id="AromaUL" class="tab-btn"></div>
                 </div>
                 <div>
-                    <button class="info__tab-button">Застосування</button>
-                    <div class="tab-btn"></div>
+                    <button class="info__tab-button" onclick="openTab(event, 'Application', 'ApplicationUL')">Застосування</button>
+                    <div id="ApplicationUL" class="tab-btn"></div>
                 </div>
                 <div>
-                    <button class="info__tab-button">Умови Зберiгання i Термiн Придатностi</button>
-                    <div class="active-tab-btn"></div>
+                    <button class="info__tab-button" onclick="openTab(event, 'StorageConditions', 'StorageConditionsUL')"
+                        id="defaultOpen">Умови Зберiгання i Термiн Придатностi</button>
+                    <div id="StorageConditionsUL" class="tab-btn"></div>
                 </div>
                 <div>
-                    <button class="info__tab-button">Протипоказання</button>
-                    <div class="tab-btn"></div>
+                    <button class="info__tab-button" onclick="openTab(event, 'Contraindication', 'ContraindicationUL')">Протипоказання</button>
+                    <div id="ContraindicationUL" class="tab-btn"></div>
                 </div>
                 <div>
-                    <button class="info__tab-button">Склад</button>
-                    <div class="tab-btn"></div>
+                    <button class="info__tab-button" onclick="openTab(event, 'Storage', 'StorageUL')">Склад</button>
+                    <div id="StorageUL" class="tab-btn"></div>
                 </div>
                 <div>
-                    <button class="info__tab-button">Вiдгуки</button>
-                    <div class="tab-btn"></div>
+                    <button class="info__tab-button" onclick="openTab(event, 'Reviews', 'ReviewsUL')">Відгуки</button>
+                    <div id="ReviewsUL" class="tab-btn"></div>
                 </div>            
                 
             </div>
-            <p class="info__tab-p">
+            <p id="Aroma" class="info__tab-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non pretium ex. Aenean enim nibh, accumsan dignissim ultricies sit amet, scelerisque sed quam. Quisque ac massa elementum, ullamcorper ex at, aliquet quam. Morbi libero purus, mollis ac luctus eget, malesuada sit amet enim. Aenean non scelerisque risus, ut consequat nunc. Nunc quis leo a odio lobortis fermentum ac sed mi. Nunc at nulla enim. Nullam sem neque, dapibus vel erat at, efficitur convallis libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi venenatis justo id sem rhoncus placerat. Morbi eget sollicitudin ligula. Morbi lacinia volutpat velit. Quisque et dui quis elit volutpat sollicitudin et a enim. Proin tortor ante, auctor eget venenatis eu, varius sed elit.
+            </p>
+            <p id="Application" class="info__tab-p">
+                Proin sit amet justo arcu. Aliquam porta tempor mauris eu vestibulum. Vestibulum libero lorem, condimentum a lobortis non, sagittis non nibh. Aliquam vulputate luctus urna, eget eleifend odio volutpat at. Sed sed augue sed leo mattis porttitor. Vestibulum eu varius augue. Sed semper ipsum non magna pulvinar, at auctor lectus blandit. Sed egestas consequat dui eget ullamcorper.
+            </p>
+            <p id="StorageConditions" class="info__tab-p">
                 від +5 до +25С, зберігати в темному сухому місці<br>
                 12 місяців від дати виготовлення / 4 місяці від дати використання
+            </p>
+            <p id="Contraindication" class="info__tab-p">
+                Praesent convallis nisi arcu, imperdiet pellentesque nisi pellentesque et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sed pellentesque justo, id facilisis justo. Nulla facilisi. Phasellus aliquam, dui eu imperdiet vulputate, eros massa sollicitudin justo, at iaculis turpis est vitae ex. Aliquam tempus, augue in lacinia consequat, lectus enim auctor sapien, quis cursus orci turpis id orci. Aenean lorem leo, sollicitudin sit amet mi quis, aliquam condimentum massa.
+            </p>
+            <p id="Storage" class="info__tab-p">
+                In elit libero, porta at arcu ac, dignissim faucibus metus. Donec pellentesque dolor quis suscipit ullamcorper. Curabitur in sapien et nunc vehicula luctus fringilla sed felis. Phasellus id eros metus. Praesent semper eleifend molestie. Nulla dapibus, mauris id ullamcorper pulvinar, nunc risus molestie mi, non interdum nisi odio in felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eget laoreet quam, vitae finibus dui. Cras porttitor iaculis lacus, quis tincidunt tellus faucibus eu. Cras vel dolor vitae urna elementum gravida vitae in nulla. Integer id lacus non dolor malesuada efficitur. Suspendisse quis lectus faucibus, auctor turpis a, aliquam dolor. Morbi imperdiet augue eu tortor interdum, sed gravida leo molestie.
+            </p>
+            <p id="Reviews" class="info__tab-p">
+                Phasellus neque nunc, maximus eu posuere at, mattis et lacus. Nunc aliquam dictum luctus. Aliquam dictum nibh in leo laoreet, ut cursus metus feugiat. Ut tempus nunc ac tempor convallis. Mauris porta tortor nec dolor elementum laoreet. Aenean efficitur neque sem, sit amet viverra ligula egestas efficitur. Aliquam fringilla orci non nulla blandit, eget blandit erat venenatis. Cras sit amet volutpat nisl. Phasellus consequat sagittis enim et ultricies. Ut facilisis leo sed libero vehicula blandit. Praesent non mollis justo. Integer convallis, nulla porttitor rutrum porta, lorem arcu ultricies magna, non rhoncus purus libero ornare tellus. Pellentesque sollicitudin, dolor in dapibus imperdiet, leo augue gravida nibh, vel maximus ex tortor vel neque. Quisque pretium, felis facilisis consequat varius, purus ante egestas velit, nec dictum odio neque ac risus. Cras lacinia semper augue, nec consectetur nunc suscipit vel. Nunc dignissim eros ipsum, non tempor nibh porttitor et.
             </p>
         </div>
 
@@ -318,6 +335,7 @@
             </div>
         </div>
     </footer>
+    <script src="page2-script.js"></script>
 </body>
 
 </html>
